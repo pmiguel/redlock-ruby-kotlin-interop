@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    connection_pool (2.3.0)
+    redis (5.0.4)
+      redis-client (>= 0.7.4)
+    redis-client (0.8.1)
+      connection_pool
+    redlock (1.3.0)
+      redis (>= 3.0.0, < 6.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  redlock
+
+RUBY VERSION
+   ruby 3.1.2p20
+
+BUNDLED WITH
+   2.3.22
