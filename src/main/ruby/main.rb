@@ -10,6 +10,6 @@ redlock = Redlock::Client.new(
 
 puts("Acquiring Lock...")
 
-res = redlock.lock("lock_key1", 30*1000)
+res = redlock.lock("lock_key1", 10*60*1000)
 
 puts(res.inspect)

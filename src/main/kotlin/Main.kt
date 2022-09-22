@@ -10,9 +10,8 @@ fun main(args: Array<String>) {
     val client = Redisson.create(config)
 
     println("Acquiring Lock...")
-    val lock = client.getLock("lock_key1")
-    val redlock = client.getRedLock(lock)
-    val res = redlock.tryLock(30, 30, TimeUnit.SECONDS)
+    val lock = client.getLock("lock_key2")
+    val res = ml.tryLock(30, 60*10, TimeUnit.SECONDS)
 
     println("Lock acquire result $res")
 
